@@ -351,3 +351,121 @@ body {
   justify-content: center;
   gap: 20px;
 }
+
+/* page3 */
+
+.section-page3 {
+  width: 1512px;
+  height: 1117px;
+  padding: 80px 0px 120px 0px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #1e1f27;
+}
+
+.container-page3 {
+  width: 1208px;
+  height: 917px;
+  gap: 80px;
+  opacity: 0px;
+  margin: auto;
+}
+.content-h2 {
+  width: 1208px;
+  height: 67px;
+  gap: 80px;
+  opacity: 0px;
+}
+.style-h2 {
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: white;
+}
+
+.container-cards {
+  width: 1208px;
+  height: 770px;
+  gap: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: center;
+  margin-top: 40px;
+  justify-items: center;
+  padding: 30px;
+}
+.first-content {
+  width: 1208px;
+  height: 355px;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+}
+.card-one {
+  width: 376px;
+  height: 355px;
+  padding: 36px 0px 0px 0px;
+  gap: 0px;
+  border: 2px solid white;
+  border-radius: 24px;
+  color: white;
+}
+.card-shelter {
+  width: 304px;
+  height: 283px;
+  padding: 24px 0px 0px 0px;
+  gap: 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: auto;
+}
+.shelter-title {
+  width: 304px;
+  height: 51px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.style-h5 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 51.2px;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-self: lef;
+  margin-top: 30px;
+}
+
+.shelter-text {
+  width: 304px;
+  height: 192px;
+  gap: 0px;
+  opacity: 0px;
+}
+.style-p-shelter-text {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  display: flex;
+  text-align: left;
+}
+.img-shelter {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px 0px 0px 0px;
+}
+/* second cards */
+
+.second-cards-container {
+  display: flex;
+  width: 1208px;
+  height: 355px;
+  gap: 40px;
+  background-color: blue;
+}
