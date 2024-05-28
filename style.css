@@ -262,7 +262,7 @@ body {
   height: 144px;
   gap: 40px;
   display: flex;
-  margin-top: 20px;
+  margin-top: 80px;
 }
 
 .animal_rescued {
@@ -311,6 +311,7 @@ body {
   justify-content: center;
   gap: 20px;
 }
+
 .gallery {
   display: flex;
   flex-flow: row nowrap;
@@ -558,4 +559,148 @@ body {
   gap: 8px;
   font-size: 20px;
   margin-left: 40px;
+}
+.main-section-page5 {
+  width: 1512px;
+  height: 732px;
+  padding: 80px 0px 80px 0px;
+  background-color: #1e1f27;
+}
+.main_content-page5 {
+  width: 1208px;
+  height: 572px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 80px;
+  opacity: 0px;
+}
+.box-title {
+  display: flex;
+  margin: 0 auto;
+  width: 1208px;
+  height: 134px;
+  gap: 110px;
+}
+.style-h2-page5 {
+  margin: auto;
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: white;
+}
+
+.cards-page5 {
+  display: flex;
+  width: 1208px;
+  height: 358px;
+  gap: 40px;
+  opacity: 0px;
+}
+.box-adopt {
+  width: 272px;
+  height: 358px;
+  gap: 32px;
+  border-radius: 24px;
+  border: solid 2px white;
+}
+.box-text-page5 {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: auto;
+  margin-top: 40px;
+  width: 224px;
+  height: 150px;
+  gap: 16px;
+}
+.box-title-cards {
+  display: flex;
+  width: 224px;
+  height: 38px;
+  justify-content: center;
+}
+.style-span {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38.4px;
+  letter-spacing: -0.02em;
+  display: flex;
+  color: white;
+}
+.box-text-cards {
+  width: 224px;
+  height: 96px;
+  gap: 0px;
+  opacity: 0px;
+}
+.style-p {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  color: white;
+}
+
+.button-custom button {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px 0px 30px;
+  width: 154px;
+  height: 50px;
+  padding: 16px 0px 0px 0px;
+  border: solid 1px #1e1f27;
+  border-radius: 16px;
+  background-color: #04c27f;
+  font-family: Poppins;
+  font-weight: 700;
+  text-align: center;
+}
+.button-custom-1 button {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px 0px 30px;
+  width: 154px;
+  height: 50px;
+  padding: 16px 0px 0px 0px;
+  border: solid 1px #1e1f27;
+  border-radius: 16px;
+  background-color: #f1d06e;
+  font-family: Poppins;
+  font-weight: 700;
+  text-align: center;
+}
+.button-custom-2 button {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px 0px 30px;
+  width: 154px;
+  height: 50px;
+  padding: 16px 0px 0px 0px;
+  border: solid 1px #1e1f27;
+  border-radius: 16px;
+  background-color: #ff3d9a;
+  font-family: Poppins;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+.button-custom-3 button {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px 0px 30px;
+  width: 154px;
+  height: 50px;
+  padding: 16px 0px 0px 0px;
+  border: solid 1px #1e1f27;
+  border-radius: 16px;
+  background-color: #5758f1;
+  font-family: Poppins;
+  font-weight: 700;
+  text-align: center;
+  color: white;
 }
