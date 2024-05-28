@@ -469,3 +469,93 @@ body {
   gap: 40px;
   background-color: blue;
 }
+
+/* page4 */
+.main_container-page4 {
+  width: 1512px;
+  height: 907px;
+  padding: 80px 0px 120px 0px;
+  gap: 0px;
+}
+.main-content-Adoption {
+  display: flex;
+  margin: auto;
+  width: 1208px;
+  height: 707px;
+  gap: 24px;
+  margin-top: 100px;
+}
+.div-h2-page4 {
+  display: flex;
+  margin: auto;
+  width: 1208px;
+  height: 67px;
+  gap: 40px;
+}
+.style-h2-p4 {
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin: auto;
+}
+.content_block {
+  width: 584px;
+  height: 616px;
+  opacity: 0px;
+}
+.text_Block {
+  display: flex;
+  width: 584px;
+  height: 616px;
+  gap: 32px;
+}
+.text-Applicants {
+  width: 584px;
+  height: 439px;
+  gap: 20px;
+  opacity: 0px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.custom-title {
+  width: 584px;
+  height: 51px;
+}
+
+.text-style-page4 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 51.2px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #1e1f27;
+}
+.content-ul {
+  width: 584px;
+  height: 368px;
+  gap: 0px;
+  opacity: 0px;
+}
+.customAll {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38.4px;
+  text-align: left;
+}
+.button-adop button {
+  width: 217px;
+  height: 64px;
+  padding: 16px 32px 16px 32px;
+  border: solid 2px;
+  border-radius: 32px;
+  background-color: #1e1f27;
+  color: white;
+  gap: 8px;
+  font-size: 20px;
+  margin-left: 40px;
+}
