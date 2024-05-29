@@ -704,3 +704,208 @@ body {
   text-align: center;
   color: white;
 }
+/* page 6 */
+.main-content-page6 {
+  position: relative;
+  display: flex;
+  width: 1512px;
+  height: 280px;
+  padding: 80px 0px 120px 0px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #1e1f27;
+  justify-content: center;
+  overflow: hidden;
+}
+.box-title-page6 {
+  width: 1208px;
+  height: 282px;
+  gap: 60px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.h2-find-your {
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: white;
+  margin: auto;
+}
+.style-best-friend {
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: yellow;
+}
+
+.subtitle {
+  width: 1208px;
+  height: 155px;
+  gap: 40px;
+  margin-bottom: 10px;
+}
+
+.text2 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 51.2px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: white;
+  margin: auto;
+}
+.div-cat,
+.div-dog {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.div-cat {
+  left: 56px;
+  margin-top: 40px;
+}
+
+.div-dog {
+  right: 88px;
+  margin-top: 40px;
+}
+
+.img-cat-page6,
+.img-dog-page6 {
+  width: 300px;
+  height: 400px;
+}
+.button-page6 {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  width: 1208px;
+  height: 64px;
+  gap: 24px;
+}
+.button-style-page6 {
+  width: 238px;
+  height: 64px;
+  padding: 16px 32px 16px 32px;
+  gap: 8px;
+  border: solid 2px;
+  border-radius: 32px;
+  background-color: #f8db46;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 28px;
+  color: #1e1f27;
+  font-size: 18px;
+}
+.button-adopt {
+  width: 217px;
+  height: 64px;
+  padding: 16px 32px 16px 32px;
+  gap: 8px;
+  border: solid 2px;
+  border-radius: 32px;
+  background-color: #1e1f27;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+.main-subscribe {
+  display: flex;
+  justify-content: center;
+  width: 1512px;
+  height: 250px;
+  padding: 80px 0px 80px 0px;
+  gap: 60px;
+  opacity: 0px;
+  background-color: #5758f1;
+}
+.main-container-page6 {
+  width: 1208px;
+  height: 271px;
+  gap: 60px;
+  opacity: 0px;
+  margin: auto;
+}
+.title-subscribe {
+  display: flex;
+  width: 1208px;
+  height: 147px;
+  gap: 12px;
+  opacity: 0px;
+
+  justify-content: center;
+  flex-flow: column;
+}
+.style-title-subscribe {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 67.2px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+.text-subscribe {
+  display: flex;
+  align-self: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  color: white;
+}
+.input-email {
+  display: flex;
+  width: 1208px;
+  height: 64px;
+  gap: 24px;
+  opacity: 0px;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-style {
+  width: 156px;
+  height: 10px;
+  padding: 16px 136px 16px 24px;
+  gap: 8px;
+  border: solid 2px white;
+  border-radius: 32px;
+  background-color: transparent;
+  color: white;
+}
+
+.style-button-subscribe {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  height: 48px;
+  padding: 16px 32px 16px 28px;
+  gap: 8px;
+  border: solid 2px white;
+  border-radius: 32px;
+  opacity: 0px;
+  background-color: white;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #1e1f27;
+}
