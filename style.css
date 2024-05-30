@@ -16,6 +16,7 @@ body {
   gap: 85px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .container-img-a {
   width: 730px;
@@ -121,7 +122,7 @@ body {
 
 .content-section-1 {
   text-align: center;
-  width: Fixed 584px;
+  width: 584px;
   height: 555px;
   gap: 48px;
   opacity: 0px;
@@ -231,8 +232,8 @@ body {
   height: 924px;
   padding: 80px 0px 80px 0px;
   gap: 0px;
-  opacity: 0px;
   background: #1e1f27;
+  display: flex;
 }
 
 .main_content {
@@ -309,21 +310,24 @@ body {
 }
 
 .container-dogs {
+  width: 1208px;
+  height: 326px;
+  gap: 60px;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
 .gallery {
+  gap: 60px;
   display: flex;
   flex-flow: row nowrap;
-  overflow-x: auto;
+  overflow-x: hidden;
   gap: 20px;
-}
-.gallery {
   -ms-text-overflow-style: none;
   scrollbar-width: none;
 }
+
 .content-dog-1 {
   display: flex;
   justify-content: center;
@@ -353,6 +357,9 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+.item {
+  flex: 0 0 auto;
 }
 
 /* page3 */
@@ -1110,4 +1117,264 @@ footer .container-footer ul {
   letter-spacing: -0.02em;
   text-align: center;
   color: #f9047bb2;
+}
+/* section--page adoptables */
+
+.section-adoptables {
+  width: 1512px;
+  height: 1289px;
+  padding: 80px 0px 80px 0px;
+  background-color: #1e1f27;
+}
+.container-page-adoptable {
+  margin: auto;
+  width: 1208px;
+  height: 1129px;
+  gap: 80px;
+}
+.text-information {
+  width: 1208px;
+  height: 211px;
+  gap: 80px;
+  opacity: 0px;
+}
+.back-button button {
+  width: 156px;
+  height: 64px;
+  gap: 8px;
+  background-color: #37383f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: solid 3px #37383f;
+  border-radius: 32px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  color: white;
+}
+.title-adoptables-pet h2 {
+  width: 1208px;
+  height: 67px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: white;
+}
+.content-photoss {
+  display: flex;
+  width: 1208px;
+  height: 920px;
+  gap: 60px;
+  opacity: 0px;
+}
+
+.card-1 {
+  width: 250px;
+  height: 389px;
+  gap: 12px;
+  opacity: 0px;
+}
+.name-dogs p {
+  width: 250px;
+  height: 51px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 51.2px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: white;
+}
+.button-see-more button {
+  width: 250px;
+  height: 64px;
+  padding: 16px 32px 16px 32px;
+  gap: 8px;
+  border-radius: 32px;
+  border: solid 2px #ff3d9a;
+  opacity: 0px;
+  background-color: #ff3d9a;
+  display: flex;
+  justify-content: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  color: white;
+}
+.c-card {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 300px);
+}
+
+/* modal donate */
+
+.container-donate {
+  width: 480px;
+  height: 716px;
+  /*  top: -4255px;
+  left: 3120px;  */
+  padding: 32px 0px 0px 0px;
+  gap: 48px;
+  border-radius: 32px;
+}
+
+.content-h2-donate {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 416px;
+  height: 116px;
+  gap: 0px;
+  opacity: 0px;
+}
+.content-h2-donate h1 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin: 0;
+}
+
+.container-input-donate {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  width: 416px;
+  height: 488px;
+  gap: 24px;
+  opacity: 0px;
+  margin-top: 40px;
+}
+.input-email-donate {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.input-email-donate2 {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.input-email-donate2 p {
+  font-weight: 700;
+  color: #ff3d9a;
+}
+.input-email-donate2 p span {
+  color: rgb(0, 119, 255);
+}
+.input-email-donate2 input {
+  border: solid 1px #3f96fc;
+  border-radius: 8px;
+}
+.input-style-2 {
+  width: 256px;
+  height: 20px;
+  padding: 16px 136px 16px 24px;
+  gap: 8px;
+}
+.input-email-donate p {
+  font-weight: 700;
+  color: #ff3d9a;
+}
+.input-email-donate p span {
+  color: rgb(0, 119, 255);
+}
+.input-email-donate input {
+  border: solid 1px #937aff;
+  border-radius: 8px;
+}
+
+.input-style-2 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  appearance: textfield;
+}
+
+.payment {
+  width: 416px;
+  height: 104px;
+  gap: 8px;
+  opacity: 0px;
+}
+.method-pay {
+  display: flex;
+  width: 416px;
+  height: 80px;
+  gap: 8px;
+  opacity: 0px;
+}
+.pix {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 133.33px;
+  height: 56px;
+  gap: 8px;
+  border: solid 1px;
+  border-radius: 8px;
+  opacity: 0px;
+}
+.pix span {
+  display: flex;
+  width: 69.33px;
+  align-items: center;
+  height: 50px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+.button-help button {
+  display: flex;
+  align-items: center;
+  width: 249px;
+  height: 64px;
+  padding: 16px 32px 16px 32px;
+  gap: 8px;
+  border-radius: 32px;
+  border: #ff3d9a;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  background-color: #ff3d9a;
+  color: white;
+}
+.button-help {
+  display: flex;
+  margin: auto;
+}
+dialog::backdrop {
+  background-color: rgb(0 0 0/0.5);
+}
+
+dialog {
+  border: none;
+  border-radius: 32px;
+  box-shadow: 0 0 1em rgb(0 0 0/0.3);
+  top: 60%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+.modal-aberto {
+  overflow: hidden;
 }

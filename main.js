@@ -7,14 +7,14 @@ let groupIndex = 0; // variavel que define
 const maxItems = items.length;
 
 controls.forEach((control) => {
-  control.addEventListener('click', () => {
-    const isLeft = control.classList.contains('arrow-right');
-
-    if (isLeft) {
-      groupIndex -= 1;
+  control.addEventListener('click', (event) => {
+    event.preventDefault();
+    const isRight = control.classList.contains('arrow-right');
+    if (isRight) {
+      groupIndex += 1;
       console.log(groupIndex);
     } else {
-      groupIndex += 1;
+      groupIndex -= 1;
       console.log(groupIndex);
     }
     if (groupIndex >= Math.ceil(items.length / itemsPerGroup)) {
@@ -28,13 +28,7 @@ controls.forEach((control) => {
 
     const startIndex = groupIndex * itemsPerGroup;
 
-    items.forEach((item, index) => {
-      const isInGroup =
-        index >= startIndex && index < startIndex + itemsPerGroup;
-      item.classList.toggle('first', isInGroup);
-    });
-
-    if (isLeft) {
+    if (isRight) {
       items[startIndex].scrollIntoView({
         inline: 'start',
         behavior: 'smooth',
@@ -51,3 +45,22 @@ controls.forEach((control) => {
     radios[startIndex / itemsPerGroup].checked = true;
   });
 });
+
+const donate = document.querySelectorAll('#donate-id, #donate-id2');
+//const donateHeader = document.getElementById('donate-id2');
+const modal = document.querySelector('dialog');
+const buttonCancel = document.getElementById('button-cancel-modal');
+
+console.log(buttonCancel);
+
+donate.forEach(function (el) {
+  el.addEventListener('click', () => {
+    modal.showModal();
+    document.body.classList.add('modal-aberto');
+  });
+});
+
+buttonCancel.onclick = function () {
+  modal.close();
+  document.body.classList.remove('modal-aberto');
+};
