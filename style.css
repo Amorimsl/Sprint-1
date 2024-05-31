@@ -1234,6 +1234,7 @@ footer .container-footer ul {
 .content-h2-donate {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin: auto;
   width: 416px;
   height: 116px;
@@ -1243,11 +1244,23 @@ footer .container-footer ul {
 .content-h2-donate h1 {
   font-family: Poppins;
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 57.6px;
   letter-spacing: -0.02em;
   text-align: center;
   margin: 0;
+  color: #1e1f27;
+}
+.content-h2-donate p {
+  display: flex;
+  margin: auto;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #1e1f27;
 }
 
 .container-input-donate {
@@ -1276,7 +1289,7 @@ footer .container-footer ul {
   color: rgb(0, 119, 255);
 }
 .input-email-donate2 input {
-  border: solid 1px #3f96fc;
+  border: solid 1px #937aff;
   border-radius: 8px;
 }
 .input-style-2 {
@@ -1288,12 +1301,17 @@ footer .container-footer ul {
 .input-email-donate p {
   font-weight: 700;
   color: #ff3d9a;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
 }
 .input-email-donate p span {
   color: rgb(0, 119, 255);
 }
 .input-email-donate input {
-  border: solid 1px #937aff;
+  border: solid 1px #3f96fc;
   border-radius: 8px;
 }
 
@@ -1365,16 +1383,136 @@ dialog::backdrop {
   background-color: rgb(0 0 0/0.5);
 }
 
-dialog {
+.donate-dialog {
   border: none;
   border-radius: 32px;
   box-shadow: 0 0 1em rgb(0 0 0/0.3);
   top: 60%;
-  left: 50%;
-  right: 50%;
+  left: 2606px;
   transform: translate(-50%, -50%);
-  z-index: 9999;
+  transition: 0.6s;
+  gap: 48px;
+  padding: 32px;
+}
+.donate-dialog-view {
+  border: none;
+  border-radius: 32px;
+  box-shadow: 0 0 1em rgb(0 0 0/0.3);
+  top: 90%;
+  left: 2606px;
+  transform: translate(-50%, -50%);
+  transition: 0.6s;
+  gap: 48px;
+  padding: 32px;
+}
+
+.apply-dialog {
+  border: none;
+  border-radius: 32px;
+  box-shadow: 0 0 1em rgb(0 0 0/0.3);
+  top: 60%;
+  left: 2606px;
+  transition: 0.6s;
+  transform: translate(-50%, -50%);
 }
 .modal-aberto {
+  display: block;
   overflow: hidden;
+}
+.dob-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #e91e63; /* Pink color */
+  font-weight: bold;
+}
+
+.dob-container {
+  display: flex;
+  gap: 10px;
+}
+
+select {
+  display: flex;
+  width: 160px;
+  height: 56px;
+  gap: 8px;
+  border-radius: 8px;
+  border: solid 2px rgb(0, 119, 255);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.payment p {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: #ff3d9a;
+}
+.payment p span {
+  color: #3f96fc;
+}
+.container-agree {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 418px;
+  height: 176px;
+  gap: 12px;
+  opacity: 0px;
+}
+.checked-agree {
+  display: flex;
+  align-items: center;
+  width: 384px;
+  height: 24px;
+  gap: 12px;
+  opacity: 0px;
+}
+.checked-agree p {
+  color: #1e1f27;
+}
+.checked-agree p a {
+  padding: 2px;
+  color: #ff3d9a;
+}
+
+.button-confirmed button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 420px;
+  height: 64px;
+  gap: 24px;
+  opacity: 0px;
+  padding: 16px 24px 16px 24px;
+  gap: 8px;
+  border: #04c27f;
+  border-radius: 8px;
+  opacity: 0px;
+  background-color: #04c27f;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+.button-confirmed2 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 420px;
+  height: 64px;
+  gap: 24px;
+  opacity: 0px;
+  padding: 16px 24px 16px 24px;
+  gap: 8px;
+  border: #37383f;
+  border-radius: 8px;
+  opacity: 0px;
+  background-color: #37383f;
+  color: white;
+  font-size: 20px;
 }

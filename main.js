@@ -46,21 +46,43 @@ controls.forEach((control) => {
   });
 });
 
-const donate = document.querySelectorAll('#donate-id, #donate-id2');
+const donate = document.querySelectorAll(
+  '#donate-id, #donate-id2 ,#button-donate-view'
+);
+const adopt = document.querySelectorAll(
+  '#Apply-id  , #apply-page4 ,#button-last-page'
+);
+const cancelApply = document.getElementById('button-cancel-apply');
+const dialogApply = document.querySelector('.apply-dialog');
 //const donateHeader = document.getElementById('donate-id2');
 const modal = document.querySelector('dialog');
-const buttonCancel = document.getElementById('button-cancel-modal');
-
-console.log(buttonCancel);
-
+const buttonCancelDonate = document.getElementById('button-cancel-modal');
+console.log(cancelApply);
 donate.forEach(function (el) {
   el.addEventListener('click', () => {
     modal.showModal();
     document.body.classList.add('modal-aberto');
+    modal.style.left = '50%';
+    modal.style.right = '50%';
   });
 });
 
-buttonCancel.onclick = function () {
+buttonCancelDonate.onclick = function () {
   modal.close();
+  modal.style.left = '2606px';
+  document.body.classList.remove('modal-aberto');
+};
+// show modal Apply to Adopt
+adopt.forEach(function (el) {
+  el.addEventListener('click', () => {
+    dialogApply.showModal();
+    document.body.classList.add('modal-aberto');
+    dialogApply.style.left = '30%';
+  });
+});
+
+cancelApply.onclick = function () {
+  dialogApply.close();
+  dialogApply.style.left = '2606px';
   document.body.classList.remove('modal-aberto');
 };

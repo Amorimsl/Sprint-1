@@ -36,7 +36,7 @@
           <img src="img/img- header/Icon.png" class="phone" />
           <div href="tel:631-249-7325" class="number-phone">631-249-7325</div>
           <div class="button-content">
-            <button class="style-button-2">
+            <button class="style-button-2" id="button-donate-view">
               <img
                 class="icon"
                 src="img/img-section-1/Icon (1).png"
@@ -50,6 +50,71 @@
 
     <section class="section-adoptables">
       <div class="container-page-adoptable">
+        <dialog class="donate-dialog-view">
+          <div class="container-donate">
+            <div class="content-h2-donate">
+              <h1>Choose your <br />Donate</h1>
+            </div>
+            <div>
+              <div class="container-input-donate">
+                <div class="input-email-donate2">
+                  <p>EMAIL <span>* </span></p>
+                  <input
+                    class="input-style-2"
+                    type="email"
+                    id="email"
+                    name="email"
+                  />
+                </div>
+                <div class="input-email-donate">
+                  <p>HOW MUCH CAN YOU HELP<span>* </span></p>
+                  <input
+                    class="input-style-2"
+                    type="number"
+                    id="priceInput"
+                    name="priceInput"
+                    placeholder="0.00"
+                    inputmode="numeric"
+                  />
+                </div>
+
+                <div class="payment">
+                  <p>PAYMENT METHOD <span>*</span></p>
+                  <div class="method-pay">
+                    <div class="pix">
+                      <span>Pix</span>
+                      <img src="img/img-donate/checked.png" />
+                    </div>
+                    <div class="pix">
+                      <span>Credit Card</span>
+                      <img src="img/img-donate/radio.png" />
+                    </div>
+                    <div class="pix">
+                      <span>paypau</span>
+                      <img src="img/img-donate/radio.png" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="button-help">
+                  <button>
+                    <img src="img/img-donate/heart-white.png" />I wanna Help!
+                  </button>
+                </div>
+                <div class="back-button">
+                  <button id="button-cancel-modal">
+                    <img
+                      style="width: 32px; height: 32px"
+                      src="img/img-adoptable/CaretLeft.png"
+                      alt=""
+                    />Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </dialog>
+
         <div class="text-information">
           <div class="back-button">
             <button onclick="location.href='index.html'">
@@ -255,5 +320,7 @@
         <p>​We are not just a rescue, <span>we are a refuge </span></p>
       </div>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
