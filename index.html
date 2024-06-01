@@ -43,7 +43,6 @@
       </div>
       </header>
       <dialog class="donate-dialog">
-        <div class="fate"></div>
         <div class="container-donate">
           <div class="content-h2-donate">
             <h1>Choose your <br />Donate</h1>
@@ -52,45 +51,56 @@
             <div class="container-input-donate">
               <div class="input-email-donate2">
                 <p>EMAIL <span>* </span></p>
+                <small id="error-input-email"></small>
                 <input
                   class="input-style-2"
                   type="email"
-                  id="email"
+                  id="email-input-donate"
                   name="email"
                 />
               </div>
               <div class="input-email-donate">
                 <p>HOW MUCH CAN YOU HELP<span>* </span></p>
+                <small id="error-input-price"></small>
                 <input
                   class="input-style-2"
                   type="number"
                   id="priceInput"
                   name="priceInput"
-                  placeholder="0.00"
+                  placeholder="R$ 0.00"
                   inputmode="numeric"
                 />
               </div>
   
               <div class="payment">
-                <p>PAYMENT METHOD <span>*</span></p>
+                <div class="div-error">
+                  <p>PAYMENT METHOD <span>*</span></p>
+                  <small id="small-pix" ></small>
+                </div>
+               
                 <div class="method-pay">
-                  <div class="pix">
-                    <span>Pix</span>
-                    <img src="img/img-donate/checked.png" />
+                  
+                  <div class="pix" id="color-pix">
+                    <label>Pix</label>
+                    <input type="radio" name="radio" id="radio-donate" >
                   </div>
-                  <div class="pix">
-                    <span>Credit Card</span>
-                    <img src="img/img-donate/radio.png" />
+                  <div class="pix-credit" id="color-credit">
+                      <label>Credit Card</label>
+                   
+                        <input type="radio" name="radio" id="radio-donate-credit" >
+                      
+                    
                   </div>
-                  <div class="pix">
-                    <span>paypau</span>
-                    <img src="img/img-donate/radio.png" />
+
+                  <div class="pix" id="color-paypal">
+                    <label>paypau</label>
+                    <input type="radio" name="radio" id="radio-donate-paypau" >
                   </div>
                 </div>
               </div>
   
               <div class="button-help">
-                <button>
+                <button id="button-confirm-help">
                   <img src="img/img-donate/heart-white.png" />I wanna Help!
                 </button>
               </div>
@@ -114,19 +124,20 @@
             <h1>Apply to Adopt</h1>
             <p>Small text description can goes here</p>
           </div>
-          <div>
             <div class="container-input-donate">
               <div class="input-email-donate2">
                 <p>EMAIL <span>* </span></p>
+                <small id="error-input-email-adopt"></small>
                 <input
                   class="input-style-2"
                   type="email"
-                  id="email"
+                  id="email-adopt"
                   name="email"
                 />
               </div>
               <div class="input-email-donate">
                 <p>Full Name<span>* </span></p>
+                <small id="error-input-name"></small>
                 <input
                   class="input-style-2"
                   type="text"
@@ -138,9 +149,13 @@
               </div>
   
               <div class="payment">
-                <p>Date Of Birth <span>*</span></p>
+                <div class="pay-text-error">
+                  <p>Date Of Birth <span>*</span></p>
+                  <small id="error-data" style="color: red;"></small>
+                </div>
+              
                 <div class="method-pay">
-                  <select id="day" name="day">
+                  <select id="day" name="day" onchange="iWannaAdopt()">
                     <option value="">Day</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -175,7 +190,7 @@
                     <option value="31">31</option>
                   </select>
   
-                  <select id="month" name="month">
+                  <select id="month" name="month" onchange="iWannaAdopt()">
                     <option value="">Month</option>
                     <option value="1">January</option>
                     <option value="2">February</option>
@@ -190,7 +205,7 @@
                     <option value="11">November</option>
                     <option value="12">December</option>
                   </select>
-                  <select id="year" name="year">
+                  <select id="year" name="year" onchange="iWannaAdopt()">
                     <option value="">Year</option>
                     <!-- Add options for years -->
                     <option value="2024">2024</option>
@@ -231,8 +246,9 @@
                   </select>
                 </div>
                 <div class="container-agree">
+                  <small id="small-agree" style="color: red;"></small>
                   <div class="checked-agree">
-                    <img src="img/img-donate/radio.png" />
+                    <input type="radio" name="radio" id="radio-agree"  >
                     <p>
                       I agree with
                       <a href="https://www.google.com/">Privacy Policy </a> and
@@ -240,7 +256,7 @@
                     </p>
                   </div>
                   <div class="button-confirmed">
-                    <button>
+                    <button id="button-adopt">
                       <img src="img/img-adoptable/Icon (6).png" />I wanna Adopt!
                     </button>
                   </div>
@@ -253,7 +269,6 @@
                 </div>
               </div>
             </div>
-          </d>
         </div>
       </dialog>
         <div class="line"></div>
@@ -660,10 +675,15 @@
           <p class="text-subscribe">for updates on shelter events, fundraising parties, and heartwarming stories<br>
             of animals finding their forever homes.</p>
         </div>
-        <form class="input-email">
-          <input class="input-style" type="email" id="email" name="email" placeholder="Enter your email">
-          <button class="style-button-subscribe">Subscribe</button>
-        </form>
+      
+        <div class="input-email"  >
+          <div style="display: flex; flex-direction: column;">
+            <small style="color: red; font-size: 18px; padding-left: 20px;" id="small-subscribe"></small>
+            <input class="input-style" type="email" id="email-Subscribe" name="email" placeholder="Enter your email">
+          </div>
+         
+          <button class="style-button-subscribe" id="button-Subscribe" >Subscribe</button>
+        </div>
 
       </div>
     </section>

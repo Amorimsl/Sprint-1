@@ -59,45 +59,61 @@
               <div class="container-input-donate">
                 <div class="input-email-donate2">
                   <p>EMAIL <span>* </span></p>
+                  <small id="error-input-email"></small>
                   <input
                     class="input-style-2"
                     type="email"
-                    id="email"
+                    id="email-input-donate"
                     name="email"
                   />
                 </div>
                 <div class="input-email-donate">
                   <p>HOW MUCH CAN YOU HELP<span>* </span></p>
+                  <small id="error-input-price"></small>
                   <input
                     class="input-style-2"
                     type="number"
                     id="priceInput"
                     name="priceInput"
-                    placeholder="0.00"
+                    placeholder="R$ 0.00"
                     inputmode="numeric"
                   />
                 </div>
 
                 <div class="payment">
-                  <p>PAYMENT METHOD <span>*</span></p>
+                  <div class="div-error">
+                    <p>PAYMENT METHOD <span>*</span></p>
+                    <small id="small-pix"></small>
+                  </div>
+
                   <div class="method-pay">
-                    <div class="pix">
-                      <span>Pix</span>
-                      <img src="img/img-donate/checked.png" />
+                    <div class="pix" id="color-pix">
+                      <label>Pix</label>
+                      <input type="radio" name="radio" id="radio-donate" />
                     </div>
-                    <div class="pix">
-                      <span>Credit Card</span>
-                      <img src="img/img-donate/radio.png" />
+                    <div class="pix-credit" id="color-credit">
+                      <label>Credit Card</label>
+
+                      <input
+                        type="radio"
+                        name="radio"
+                        id="radio-donate-credit"
+                      />
                     </div>
-                    <div class="pix">
-                      <span>paypau</span>
-                      <img src="img/img-donate/radio.png" />
+
+                    <div class="pix" id="color-paypal">
+                      <label>paypal</label>
+                      <input
+                        type="radio"
+                        name="radio"
+                        id="radio-donate-paypau"
+                      />
                     </div>
                   </div>
                 </div>
 
                 <div class="button-help">
-                  <button>
+                  <button id="button-confirm-help">
                     <img src="img/img-donate/heart-white.png" />I wanna Help!
                   </button>
                 </div>
@@ -321,6 +337,6 @@
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="view.js"></script>
   </body>
 </html>

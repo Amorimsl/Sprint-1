@@ -319,7 +319,6 @@ body {
 }
 
 .gallery {
-  gap: 60px;
   display: flex;
   flex-flow: row nowrap;
   overflow-x: hidden;
@@ -1223,7 +1222,7 @@ footer .container-footer ul {
 
 .container-donate {
   width: 480px;
-  height: 716px;
+  height: 750px;
   /*  top: -4255px;
   left: 3120px;  */
   padding: 32px 0px 0px 0px;
@@ -1332,6 +1331,7 @@ footer .container-footer ul {
 }
 .method-pay {
   display: flex;
+  align-items: center;
   width: 416px;
   height: 80px;
   gap: 8px;
@@ -1344,21 +1344,40 @@ footer .container-footer ul {
   width: 133.33px;
   height: 56px;
   gap: 8px;
-  border: solid 1px;
+  border: solid 1px #3f96fc;
   border-radius: 8px;
   opacity: 0px;
 }
-.pix span {
-  display: flex;
-  width: 69.33px;
-  align-items: center;
-  height: 50px;
+.pix label {
   font-family: Poppins;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.02em;
 }
+
+.pix-credit {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 133.33px;
+  height: 80px;
+  gap: 8px;
+  border-radius: 8px 0px 0px 0px;
+  border: solid 1px #3f96fc;
+  opacity: 0px;
+}
+.pix-credit label {
+  display: flex;
+  width: 69.33px;
+  height: 48px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
 .button-help button {
   display: flex;
   align-items: center;
@@ -1515,4 +1534,68 @@ select {
   background-color: #37383f;
   color: white;
   font-size: 20px;
+}
+
+#error-input-name,
+#error-input-email-adopt,
+#error-input-email,
+#error-input-price {
+  color: red;
+}
+
+#radio-donate,
+#radio-donate-credit,
+#radio-donate-paypau {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  border-radius: 99px;
+  background-color: #37383f;
+}
+#radio-donate:checked {
+  background-image: url('img/img-donate/checked.png');
+  background-color: #ff3d9a;
+}
+#radio-donate-credit:checked {
+  background-image: url('img/img-donate/checked.png');
+  background-color: #ff3d9a;
+}
+#radio-donate-paypau:checked {
+  background-image: url('img/img-donate/checked.png');
+  background-color: #ff3d9a;
+}
+
+#radio-agree {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  border-radius: 99px;
+  background-color: #37383f;
+}
+#radio-agree:checked {
+  background-image: url('img/img-donate/checked.png');
+  background-color: #ff3d9a;
+}
+.div-error {
+  display: flex;
+}
+.div-error small {
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  color: red;
+}
+.pay-text-error {
+  display: flex;
+}
+
+.pay-text-error small {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.color-divs {
+  background-color: #3f96fc;
 }
