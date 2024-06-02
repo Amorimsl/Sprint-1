@@ -79,7 +79,7 @@ const iWannaHelp = () => {
     }
 
     if (isValidHelp == true) {
-      location.href = 'success.html';
+      location.href = 'src/success.html';
     }
   });
 };

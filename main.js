@@ -40,47 +40,42 @@ const divs = document.querySelectorAll(
 );
 
 const maxItems = items.length;
+//////////////////////////////////////////////////////////////////////////////////////
 
 controls.forEach((control) => {
-  control.addEventListener('click', (event) => {
-    event.preventDefault();
+  control.addEventListener('click', () => {
     const isRight = control.classList.contains('arrow-right');
     if (isRight) {
       groupIndex += 1;
-      console.log(groupIndex);
     } else {
       groupIndex -= 1;
-      console.log(groupIndex);
     }
+
     if (groupIndex >= Math.ceil(items.length / itemsPerGroup)) {
       groupIndex = 0;
     }
 
     if (groupIndex < 0) {
       groupIndex = Math.ceil(items.length / itemsPerGroup) - 1;
-      console.log(groupIndex);
     }
 
     const startIndex = groupIndex * itemsPerGroup;
+    const endIndex = Math.min(startIndex + itemsPerGroup, items.length);
 
-    if (isRight) {
-      items[startIndex].scrollIntoView({
-        inline: 'start',
-        behavior: 'smooth',
-        block: 'nearest',
-      });
-    } else {
-      items[startIndex + itemsPerGroup - 1].scrollIntoView({
-        inline: 'end',
-        behavior: 'smooth',
-        block: 'nearest',
-      });
+    console.log(endIndex);
+
+    items.forEach((item) => {
+      item.classList.add('active');
+    });
+
+    for (let i = startIndex; i < endIndex; i++) {
+      items[i].classList.remove('active');
     }
-    // Marcar apenas o botão de rádio correspondente ao grupo atual
+
     radios[startIndex / itemsPerGroup].checked = true;
   });
 });
-
+/////////////////////////////////////////////////////////////////////////////////////////////
 const donate = document.querySelectorAll(
   '#donate-id, #donate-id2 ,#button-donate-view'
 );
@@ -152,7 +147,6 @@ const iWannaHelp = () => {
     }
     if (!email.test(valueInputEmail.value)) {
       msgErrorInput.innerHTML = 'Adicione um email valido';
-      // msgErrorInput.style.color = 'red';
       isValidHelp = false;
     } else {
       msgErrorInput.innerHTML = '';
@@ -172,7 +166,7 @@ const iWannaHelp = () => {
     }
 
     if (isValidHelp == true) {
-      location.href = 'success.html';
+      location.href = 'src/success.html';
     }
   });
 };
@@ -226,7 +220,7 @@ const iWannaAdopt = () => {
     }
 
     if (isValid == true) {
-      location.href = 'success.html';
+      location.href = 'src/success.html';
     }
   });
 };
@@ -248,6 +242,6 @@ buttonSubscribe.addEventListener('click', () => {
   }
 
   if (isValid2 == true) {
-    location.href = 'success.html';
+    location.href = 'src/success.html';
   }
 });
