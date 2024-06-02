@@ -1,24 +1,26 @@
 # Sprint -1
 
-Uma pagina de adoção de pets,campos de digitar ou selecionar totalmente validados.
+## Descrição do Projeto
 
-# Observação
+Uma página de adoção de pets com campos de entrada e seleção totalmente validados.
 
-1-Pagina esta desenvolvendo a responsividade
-2-layout responsivo entre 1400px a 1980px,usar withd 1980px para funcionalidade 100% por causa da responsividade o showModal pode nao aparecer no lugar devido!
-3-Qualquer duvida entre em contato!
+## Observações
 
-# Arquivos
+1. A página está desenvolvendo a responsividade.
+2. O layout é responsivo entre 1400px a 1980px. Usar uma largura de 1980px para funcionalidade 100% devido à responsividade. O `showModal` pode não aparecer no lugar devido a isso.
+3. Qualquer dúvida, entre em contato!
 
-public- consta as pasta de imagem e style-css de todas as paginas
-src-- consta as 2 paginas html e js das paginas segundarias
-index.html --é a pagina principal que se move entre as src
-main.js--- é js principal
+## Estrutura de Arquivos
 
-# javaScript
+- `public`: Contém as pastas de imagens e estilos CSS de todas as páginas.
+- `src`: Contém as 2 páginas HTML e JS das páginas secundárias.
+  - `index.html`: A página principal que navega entre as páginas em `src`.
+  - `main.js`: O JavaScript principal.
 
-A pasta main.js esta comentada com a logica que implementei
+## JavaScript
 
-# Declaração final
+O arquivo `main.js` está comentado com a lógica que foi implementada.
 
-Obrigado pela experiência que tive no projeto,qualquer erro ou duvida entre em contato!
+## Declaração Final
+
+Obrigado pela experiência que tive no projeto. Qualquer erro ou dúvida, entre em contato
