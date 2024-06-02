@@ -1,8 +1,8 @@
 const controls = document.querySelectorAll('.arrow-left, .arrow-right');
 const radios = document.querySelectorAll('.input-boxes');
 const items = document.querySelectorAll('.item');
-const itemsPerGroup = 4; // Defina o número de itens por grupo
-let groupIndex = 0; // variavel que define
+const itemsPerGroup = 4;
+let groupIndex = 0;
 
 const cancelApply = document.querySelector('#button-cancel-apply');
 const dialogApply = document.querySelector('.apply-dialog');
@@ -39,11 +39,11 @@ const divs = document.querySelectorAll(
   '#color-pix, #color-credit, #color-paypal'
 );
 
-const maxItems = items.length;
 //////////////////////////////////////////////////////////////////////////////////////
-
+/// logica da parte slider
 controls.forEach((control) => {
   control.addEventListener('click', () => {
+    ///// Nessa parte peguei os 2 arrow e fiz logica de somar +1 ou -1 de acordo com click e depois setei a variavel pra 0 se ultrapassar a quantidade de imagem por grupo/
     const isRight = control.classList.contains('arrow-right');
     if (isRight) {
       groupIndex += 1;
@@ -58,12 +58,12 @@ controls.forEach((control) => {
     if (groupIndex < 0) {
       groupIndex = Math.ceil(items.length / itemsPerGroup) - 1;
     }
-
+    /////////////////////////////////////////////////////////////////
     const startIndex = groupIndex * itemsPerGroup;
     const endIndex = Math.min(startIndex + itemsPerGroup, items.length);
 
-    console.log(endIndex);
-
+    // Akie eu peguei todos os items (20) adicionei um hidden neles
+    // Depois eu percorri o st artIndex com endIndex e adicionei e removi os hidden
     items.forEach((item) => {
       item.classList.add('active');
     });
@@ -76,6 +76,8 @@ controls.forEach((control) => {
   });
 });
 /////////////////////////////////////////////////////////////////////////////////////////////
+
+// Essa parte abrir os modal
 const donate = document.querySelectorAll(
   '#donate-id, #donate-id2 ,#button-donate-view'
 );
@@ -96,8 +98,6 @@ buttonCancelDonate.onclick = function () {
   modal.close();
   modal.style.left = '2606px';
   document.body.classList.remove('modal-aberto');
-  //msgErrorInput.innerHTML = '';
-  //msgErrorPrice.innerHTML = '';
 };
 // show modal Apply to Adopt
 adopt.forEach(function (el) {
@@ -115,9 +115,10 @@ cancelApply.onclick = function () {
   msgErrorAdopt.innerHTML = '';
   msgErrorName.innerHTML = '';
 };
+//////////////////////////////////////////////////////////////////
 
-/// validar
-
+///Essa parte eu peguei Id dos 3 radios, adicionei evento de click nele, peguei as div que estao em volta
+///iterei sobre elas e peguei qual indice era do click e adicionei color azul nas div.
 radiosPayment.forEach((radio) => {
   radio.addEventListener('change', function () {
     divs.forEach((div, i) => {
@@ -129,6 +130,9 @@ radiosPayment.forEach((radio) => {
     });
   });
 });
+////////////////////////////////////////////////////////////////////
+
+///// parte de validar o modal donate!
 const iWannaHelp = () => {
   buttonHelp.addEventListener('click', () => {
     let isValidHelp = true;
@@ -172,8 +176,9 @@ const iWannaHelp = () => {
 };
 
 iWannaHelp();
-///
+////////////////////////////////////////////////////////////////////////////////
 
+/// parte de validaçao do modal Apply
 const iWannaAdopt = () => {
   let daySelect = dataDay.options[dataDay.selectedIndex].text;
   let monthSelect = dataMonth.options[dataMonth.selectedIndex].text;
@@ -226,7 +231,9 @@ const iWannaAdopt = () => {
 };
 
 iWannaAdopt();
+//////////////////////////////////////////////////////////////////////////////////
 
+/// validaçao dos subscribe
 const buttonSubscribe = document.getElementById('button-Subscribe');
 const emailSubscribe = document.getElementById('email-Subscribe');
 const inputSmall = document.getElementById('small-subscribe');
@@ -245,3 +252,4 @@ buttonSubscribe.addEventListener('click', () => {
     location.href = 'src/success.html';
   }
 });
+///////////////////////////////////////////////////////////////////////////////////

@@ -1595,7 +1595,7 @@ select {
   background-color: #37383f;
 }
 #radio-agree:checked {
-  background-image: url('public/img/img-donate/checked.png');
+  background-image: url('/public/img/img-donate/checked.png');
   background-color: #ff3d9a;
 }
 .div-error {
