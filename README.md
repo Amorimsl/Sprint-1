@@ -21,7 +21,7 @@ Uma página de adoção de pets com campos de entrada e seleção totalmente val
 
 ## JavaScript
 
-O arquivo `main.js` está comentado com a lógica que foi implementada.
+O arquivo `main.js` é parte da logica de toda as interações.
 
 ## Declaração Final
 
