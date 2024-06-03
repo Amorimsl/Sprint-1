@@ -39,11 +39,8 @@ const divs = document.querySelectorAll(
   '#color-pix, #color-credit, #color-paypal'
 );
 
-//////////////////////////////////////////////////////////////////////////////////////
-/// logica da parte slider
 controls.forEach((control) => {
   control.addEventListener('click', () => {
-    ///// Nessa parte peguei os 2 arrow e fiz logica de somar +1 ou -1 de acordo com click e depois setei a variavel pra 0 se ultrapassar a quantidade de imagem por grupo/
     const isRight = control.classList.contains('arrow-right');
     if (isRight) {
       groupIndex += 1;
@@ -58,12 +55,10 @@ controls.forEach((control) => {
     if (groupIndex < 0) {
       groupIndex = Math.ceil(items.length / itemsPerGroup) - 1;
     }
-    /////////////////////////////////////////////////////////////////
+
     const startIndex = groupIndex * itemsPerGroup;
     const endIndex = Math.min(startIndex + itemsPerGroup, items.length);
 
-    // Akie eu peguei todos os items (20) adicionei um hidden neles
-    // Depois eu percorri o st artIndex com endIndex e adicionei e removi os hidden
     items.forEach((item) => {
       item.classList.add('active');
     });
@@ -75,9 +70,7 @@ controls.forEach((control) => {
     radios[startIndex / itemsPerGroup].checked = true;
   });
 });
-/////////////////////////////////////////////////////////////////////////////////////////////
 
-// Essa parte abrir os modal
 const donate = document.querySelectorAll(
   '#donate-id, #donate-id2 ,#button-donate-view'
 );
@@ -99,7 +92,7 @@ buttonCancelDonate.onclick = function () {
   modal.style.left = '2606px';
   document.body.classList.remove('modal-aberto');
 };
-// show modal Apply to Adopt
+
 adopt.forEach(function (el) {
   el.addEventListener('click', () => {
     dialogApply.showModal();
@@ -115,10 +108,7 @@ cancelApply.onclick = function () {
   msgErrorAdopt.innerHTML = '';
   msgErrorName.innerHTML = '';
 };
-//////////////////////////////////////////////////////////////////
 
-///Essa parte eu peguei Id dos 3 radios, adicionei evento de click nele, peguei as div que estao em volta
-///iterei sobre elas e peguei qual indice era do click e adicionei color azul nas div.
 radiosPayment.forEach((radio) => {
   radio.addEventListener('change', function () {
     divs.forEach((div, i) => {
@@ -130,9 +120,7 @@ radiosPayment.forEach((radio) => {
     });
   });
 });
-////////////////////////////////////////////////////////////////////
 
-///// parte de validar o modal donate!
 const iWannaHelp = () => {
   buttonHelp.addEventListener('click', () => {
     let isValidHelp = true;
@@ -176,9 +164,7 @@ const iWannaHelp = () => {
 };
 
 iWannaHelp();
-////////////////////////////////////////////////////////////////////////////////
 
-/// parte de validaçao do modal Apply
 const iWannaAdopt = () => {
   let daySelect = dataDay.options[dataDay.selectedIndex].text;
   let monthSelect = dataMonth.options[dataMonth.selectedIndex].text;
@@ -231,9 +217,7 @@ const iWannaAdopt = () => {
 };
 
 iWannaAdopt();
-//////////////////////////////////////////////////////////////////////////////////
 
-/// validaçao dos subscribe
 const buttonSubscribe = document.getElementById('button-Subscribe');
 const emailSubscribe = document.getElementById('email-Subscribe');
 const inputSmall = document.getElementById('small-subscribe');
@@ -252,4 +236,3 @@ buttonSubscribe.addEventListener('click', () => {
     location.href = 'src/success.html';
   }
 });
-///////////////////////////////////////////////////////////////////////////////////
