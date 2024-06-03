@@ -6,6 +6,8 @@ Uma página de adoção de pets com campos de entrada e seleção totalmente val
 
 ## Observações
 
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
 1. A página está desenvolvendo a responsividade.
 2. O layout é responsivo entre 1400px a 1980px. Usar uma largura de 1980px para funcionalidade 100% devido à responsividade. O `showModal` pode não aparecer no lugar devido a isso.
 3. Qualquer dúvida, entre em contato!
