@@ -23,6 +23,17 @@ Uma página de adoção de pets com campos de entrada e seleção totalmente val
 
 O arquivo `main.js` é parte da logica de toda as interações.
 
+
+## Funcionalidades do projeto!
+
+https://github.com/Amorimsl/Sprint-1/assets/136852249/a7bb0c07-16aa-4063-9e5a-7959a26b42b7
+
+
+https://github.com/Amorimsl/Sprint-1/assets/136852249/b75befef-b851-44d1-84c1-e31195e35a34
+
+
+https://github.com/Amorimsl/Sprint-1/assets/136852249/c21861ea-2350-4773-b5ee-158d468de6aa
+
 ## Declaração Final
 
 Obrigado pela experiência que tive no projeto. Qualquer erro ou dúvida, entre em contato
