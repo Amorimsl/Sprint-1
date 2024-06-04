@@ -121,6 +121,18 @@ radiosPayment.forEach((radio) => {
   });
 });
 
+function formatPrice() {
+  var input = document.getElementById('priceInput');
+  var valor = input.value;
+
+  var valorNumber = parseFloat(valor);
+
+  if (!isNaN(valorNumber)) {
+    input.value = 'R$ ' + valorNumber.toFixed(2);
+  } else {
+    input.value = '';
+  }
+}
 const iWannaHelp = () => {
   buttonHelp.addEventListener('click', () => {
     let isValidHelp = true;

@@ -5,6 +5,11 @@ body {
   min-width: 100vh;
 }
 
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .main-section {
   max-width: 1980px;
   width: 100% !important;
