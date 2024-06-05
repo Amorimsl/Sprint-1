@@ -181,6 +181,7 @@ const iWannaAdopt = () => {
   let daySelect = dataDay.options[dataDay.selectedIndex].text;
   let monthSelect = dataMonth.options[dataMonth.selectedIndex].text;
   let yearSelect = dataYear.options[dataYear.selectedIndex].text;
+
   buttonAdopt.addEventListener('click', () => {
     let isValid = true;
     if (inputEmailAdopt.value == 0) {
