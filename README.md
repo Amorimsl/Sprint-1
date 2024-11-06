@@ -17,7 +17,7 @@ Uma página de adoção de pets com campos de entrada e seleção totalmente val
 - `public`: Contém as pastas de imagens e estilos CSS de todas as páginas.
 - `src`: Contém as 2 páginas HTML e JS das páginas secundárias.
   - `index.html`: A página principal que navega entre as páginas em `src`.
-  - `main.js`: O JavaScript principal..
+  - `main.js`: O JavaScript principal.
 
 ## JavaScript
 
